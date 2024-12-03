@@ -1,7 +1,7 @@
 file = File.open('input.txt')
 
-columns = file.readlines.map { |line| line.split.map(&:to_i) }
-sorted_columns = columns.transpose.map(&:sort)
+columns = file.readlines.map { |line| line.split.map(&:to_i) }.transpose
+sorted_columns = columns.map(&:sort)
 
 difference_sum = sorted_columns[0].zip(sorted_columns[1]).sum { |a, b| (a - b).abs }
 
