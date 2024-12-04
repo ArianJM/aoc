@@ -1,4 +1,4 @@
-file = File.open('input.txt')
+file = File.open('input-01.txt')
 
 columns = file.readlines.map { _1.split.map(&:to_i) }.transpose
 sorted_columns = columns.map(&:sort)

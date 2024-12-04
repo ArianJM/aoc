@@ -1,4 +1,4 @@
-file = File.open('input.txt')
+file = File.open('input-02.txt')
 
 def check_conditions(levels)
   (levels == levels.sort || levels == levels.sort.reverse) && levels.each_cons(2).all? { (_1 - _2).abs.between?(1, 3) }

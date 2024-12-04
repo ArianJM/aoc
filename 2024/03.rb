@@ -1,4 +1,4 @@
-content = File.read('input.txt')
+content = File.read('input-03.txt')
 
 def find_muls_and_multiply(string)
   matches = string.scan(/mul\((\d{1,3}),(\d{1,3})\)/)
